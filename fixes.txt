@@ -1,0 +1,16 @@
+------DOCKER BUILD-----
+---client/package.json---
+
+Linux/MacOS:
+BUILD_PATH=../server/public react-scripts build
+
+Windows:
+set BUILD_PATH=../server/public&& react-scripts build
+
+---Dockerfile---
+
+Video:
+FROM node:lts-alpine
+
+Working:
+FROM node:14-alpine
